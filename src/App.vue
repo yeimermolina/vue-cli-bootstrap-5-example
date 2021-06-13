@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Nav />
+    <modal-test />
+    <alert-test />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import 'bootstrap/scss/bootstrap.scss';
+import Nav from './components/Nav.vue'
+import ModalTest from './components/Modal.vue'
+import AlertTest from './components/Alert.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
+    AlertTest,
+    ModalTest,
   }
 }
 </script>
